@@ -11,7 +11,7 @@ const Resume = () => {
         <div className="table">
           <ClipboardListIcon className="h-5 w-5 mr-4 text-blue_vs" />{" "}
           <code className="table-cell text-[#e6f1ff] text-3xl mt-5 whitespace-nowrap">
-            Resume
+            RESUME
           </code>
           <div className="table-cell border-b border-b-[#e6f1ff] border-opacity-25 w-full"></div>
         </div>
@@ -21,6 +21,7 @@ const Resume = () => {
           <div className="w-1/4">
             <code className="text-yellow_vs">Education</code>
           </div>
+          <br />
           <div className="w-3/4">
             <code className="text-blue_vs">SAKARYA ÜNİVERSİTESİ - LİSANS</code>
             <br />
@@ -93,7 +94,7 @@ const Resume = () => {
             <code className="text-yellow_vs"></code>
           </div>
           <div className="w-3/4">
-            <code className="text-blue_vs">AYONVİ(Start-Up)</code>
+            <code className="text-blue_vs">AYONVI(Start-Up)</code>
             <br />
             <code className="italic text-sm text-lightblue_vs">
               FULL STACK YAZILIM GELİŞTİRİCİ

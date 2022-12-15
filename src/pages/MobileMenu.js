@@ -102,7 +102,7 @@ const LeftBar = () => {
             <p> Main Avionic App </p>
           </div>
         </a>
-        <div className="object-fill ">
+        <div className="object-fill" style={{marginLeft:"40px",marginTop:"10px"}}>
           <div className="flex px-6 space-x-7">
             <a href="https://github.com/mikaaillc">
               <img

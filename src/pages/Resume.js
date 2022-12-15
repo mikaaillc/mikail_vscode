@@ -11,7 +11,7 @@ const Resume = () => {
         <div className="table">
           <ClipboardListIcon className="h-5 w-5 mr-4 text-blue_vs" />{" "}
           <code className="table-cell text-[#e6f1ff] text-3xl mt-5 whitespace-nowrap">
-            RESUME
+            Özgeçmiş
           </code>
           <div className="table-cell border-b border-b-[#e6f1ff] border-opacity-25 w-full"></div>
         </div>
@@ -23,12 +23,11 @@ const Resume = () => {
           </div>
           <br/>
           <div className="w-3/4">
-            <code className="text-blue_vs">SAKARYA ÜNİVERSİTESİ - LİSANS</code>
+            <code className="text-blue_vs"> <br /> SAKARYA ÜNİVERSİTESİ - LİSANS</code>
             <br />
             <code className="italic text-sm text-lightblue_vs">
               Elektrik Elektronik Mühendisliği
             </code>
-            <br />
             <code className="text-xs text-brown_vs">
               • 2017-2021
             </code>
@@ -55,7 +54,7 @@ const Resume = () => {
             <code className="text-yellow_vs">Work</code>
           </div>
           <div className="w-3/4">
-            <code className="text-blue_vs">Forte Bilgi İletişim Teknolojileri ve Savunma Sanayi-Havelsan</code>
+            <code className="text-blue_vs"> <br />Forte Bilgi İletişim Teknolojileri ve Savunma Sanayi-Havelsan</code>
             <br />
             <code className="italic text-sm text-lightblue_vs">
               YAZILIM MÜHENDİSİ

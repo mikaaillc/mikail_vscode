@@ -55,7 +55,7 @@ function Header() {
                           </div>
                       </div>
                       <div className="flex flex-row  mb-3">
-                          <img  className={ Index.shadowed} alt={'image of developer'} src={Avatar}
+                          <img className={ Index.shadowed} alt={'image of developer'} src={Avatar}
                                 style={{width:'35vh',borderRadius:'200px',marginLeft:'150px',float:'right' ,display:"flex"}}
                           />{" "}
                       </div>

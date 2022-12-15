@@ -14,7 +14,6 @@ const Python = require("../assets/logos/PythonLogo.png");
 const LeftBar = () => {
   const [showWebList, SetShowWebList] = useState(true);
   const [showProjectsList, SetShowProjectsList] = useState(true);
-  const [showProjectsList2, SetShowProjectsList2] = useState(true);
 
   const WebList = () => (
     <div>
@@ -22,6 +21,7 @@ const LeftBar = () => {
         <div className="ml-12 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] w-60">
           <img
             src={JSIcon}
+            alt={"js"}
             className="w-6 mr-1  ml-5 text-yellow_vs"
           />
           <p>Survey App Backend</p>
@@ -31,6 +31,7 @@ const LeftBar = () => {
         <div className="ml-12 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] w-60">
           <img
             src={ReactIcon}
+            alt={"react"}
             className="w-6 mr-1  ml-5 text-yellow_vs"
           />
           <p>Survey App Frontend</p>
@@ -40,6 +41,7 @@ const LeftBar = () => {
         <div className="ml-12 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] w-60">
           <img
               src={JSIcon}
+              alt={"js"}
               className="w-6 mr-1  ml-5 text-yellow_vs"
           />
           <p>Shop Wepsite Backend</p>
@@ -49,6 +51,7 @@ const LeftBar = () => {
         <div className="flex whitespace-nowrap items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] focus:bg-slate-300 ml-12 w-60">
           <img
             src={ReactIcon}
+            alt={"js"}
             className="w-6 mr-1  ml-5 text-yellow_vs"
           />
           <p>Shop Wepsite Frontend</p>
@@ -58,6 +61,7 @@ const LeftBar = () => {
         <div className="flex whitespace-nowrap items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] ml-12 w-60">
           <img
             src={DjangoIcon}
+            alt={"Django"}
             className="w-6 mr-1  ml-5 text-yellow_vs"
           />
           <p>To-Do Heroku</p>
@@ -67,6 +71,7 @@ const LeftBar = () => {
         <div className="flex whitespace-nowrap items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] ml-12 w-60">
           <img
               src={DjangoIcon}
+              alt={"Django"}
               className="w-6 mr-1  ml-5 text-yellow_vs"
           />
           <p>Book App</p>
@@ -81,6 +86,7 @@ const LeftBar = () => {
           <div className="ml-12 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] w-60">
             <img
                 src={Python}
+                alt={"python"}
                 className="w-6 mr-1  ml-5 text-yellow_vs"
             />
             <p>Python Charts</p>
@@ -90,6 +96,7 @@ const LeftBar = () => {
           <div className="ml-12 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] w-60">
             <img
                 src={Python}
+                alt={"python"}
                 className="w-6 mr-1  ml-5 text-yellow_vs"
             />
             <p> Main Avionic App </p>

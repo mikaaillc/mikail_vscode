@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div id="Contact" className="pb-72 mt-36">
       <div className="table mx-12 lg:mx-60">
-        <MailIcon className="h-5 w-5 mr-4 text-yellow_vs" />
+        <MailIcon className="h-5 w-5 mr-4 text-blue_vs" />
         <code className="table-cell text-[#e6f1ff] text-3xl mt-5 whitespace-nowrap">
           Get In Touch
         </code>

@@ -13,6 +13,7 @@ const Python = require("../assets/logos/PythonLogo.png");
 
 const LeftBar = () => {
   const [showWebList, SetShowWebList] = useState(true);
+  const [showWebList2, SetShowWebList2] = useState(true);
   const [showProjectsList, SetShowProjectsList] = useState(true);
 
   const WebList = () => (
@@ -102,38 +103,6 @@ const LeftBar = () => {
             <p> Main Avionic App </p>
           </div>
         </a>
-        <div className="object-fill" style={{marginLeft:"40px",marginTop:"10px"}}>
-          <div className="flex px-6 space-x-7">
-            <a href="https://github.com/mikaaillc">
-              <img
-                  src={GitLogo}
-                  alt="Git Logo"
-                  className="h-10 w-10 text-yellow_vs hover:cursor-pointer hover:h-12 hover:w-12"
-              />
-            </a>
-            <a href="https://medium.com/@mikail.celik">
-              <img
-                  src={MediumLogo}
-                  alt="Medium Logo"
-                  className="h-10 w-10 text-yellow_vs hover:cursor-pointer hover:h-12 hover:w-12"
-              />
-            </a>
-            <a href="https://www.linkedin.com/in/mikailcelik/">
-              <img
-                  src={LinkedinLogo}
-                  alt="Linkedin Logo"
-                  className="h-10 w-10 text-yellow_vs hover:cursor-pointer hover:h-12 hover:w-12"
-              />
-            </a>
-            <a href="mailto::mikailclk23@gmail.com">
-              <img
-                  src={MailLogo}
-                  alt="Mail Logo"
-                  className="h-10 w-10 text-yellow_vs hover:cursor-pointer hover:h-12 hover:w-12"
-              />
-            </a>
-          </div>
-        </div>
       </div>
   );
 
@@ -166,22 +135,54 @@ const LeftBar = () => {
                   <p>Web</p>
                 </div>
                 {showWebList ? <WebList /> : null}
-                <div
-                    className="flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] font-bold w-72"
-                    onClick={() => SetShowWebList(!showWebList)}
-                >
-                  {showWebList ? (
-                      <ChevronDownIcon className="w-7 mr-1  ml-5" />
-                  ) : (
-                      <ChevronRightIcon className="w-7 mr-1  ml-5" />
-                  )}
+                  <div
+                      className="flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] font-bold w-72"
+                      onClick={() => SetShowWebList2(!showWebList2)}
+                  >
+                      {showWebList2 ? (
+                          <ChevronDownIcon className="w-7 mr-1  ml-5" />
+                      ) : (
+                          <ChevronRightIcon className="w-7 mr-1  ml-5" />
+                      )}
 
-                  <p>Desktop</p>
+                      <p>Desktop</p>
+                  </div>
+
+                  {showWebList2 ? <Desktop /> : null}
+              </>
+          ) : null} <hr className="my-4  -mx-16 w-250 h-4 bg-bg-[#1e1e1e] rounded border-0 md:my-10 dark:bg-[#1e1e1e]"/>
+                <div className="flex px-6 space-x-7" style={{marginLeft:"40px",marginTop:"10px" }}>
+
+                    <a href="https://github.com/mikaaillc">
+                        <img
+                            src={GitLogo}
+                            alt="Git Logo"
+                            className="h-10 w-10 text-yellow_vs hover:cursor-pointer hover:h-12 hover:w-12"
+                        />
+                    </a>
+                    <a href="https://medium.com/@mikail.celik">
+                        <img
+                            src={MediumLogo}
+                            alt="Medium Logo"
+                            className="h-10 w-10 text-yellow_vs hover:cursor-pointer hover:h-12 hover:w-12"
+                        />
+                    </a>
+                    <a href="https://www.linkedin.com/in/mikailcelik/">
+                        <img
+                            src={LinkedinLogo}
+                            alt="Linkedin Logo"
+                            className="h-10 w-10 text-yellow_vs hover:cursor-pointer hover:h-12 hover:w-12"
+                        />
+                    </a>
+                    <a href="mailto::mikailclk23@gmail.com">
+                        <img
+                            src={MailLogo}
+                            alt="Mail Logo"
+                            className="h-10 w-10 text-yellow_vs hover:cursor-pointer hover:h-12 hover:w-12"
+                        />
+                    </a>
                 </div>
 
-                {showWebList ? <Desktop /> : null}
-              </>
-          ) : null}
         </div>
       </div>
   );

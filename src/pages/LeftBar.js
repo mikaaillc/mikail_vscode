@@ -13,6 +13,7 @@ const Python = require("../assets/logos/PythonLogo.png");
 
 const LeftBar = () => {
   const [showWebList, SetShowWebList] = useState(true);
+  const [showWebList2, SetShowWebList2] = useState(true);
   const [showProjectsList, SetShowProjectsList] = useState(true);
 
   const WebList = () => (
@@ -136,9 +137,9 @@ const LeftBar = () => {
             {showWebList ? <WebList /> : null}
             <div
                 className="flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] font-bold w-72"
-                onClick={() => SetShowWebList(!showWebList)}
+                onClick={() => SetShowWebList2(!showWebList2)}
             >
-              {showWebList ? (
+              {showWebList2 ? (
                   <ChevronDownIcon className="w-7 mr-1  ml-5" />
               ) : (
                   <ChevronRightIcon className="w-7 mr-1  ml-5" />
@@ -147,7 +148,7 @@ const LeftBar = () => {
               <p>Desktop</p>
             </div>
 
-            {showWebList ? <Desktop /> : null}
+            {showWebList2 ? <Desktop /> : null}
           </>
         ) : null}
         <div className="absolute inset-x-0 bottom-10 ">

@@ -61,18 +61,17 @@ function Header() {
                       </div>
                   </div>
               </div>
-              <div className="table-cell border-b border-b-[#e6f1ff] border-opacity-25 w-full"></div>
 
-              <div className="text-[#a2aabc] text-lg mt-5">
-                  <div className="grid grid-cols-3 gap-2 text-sm mt-5 text-brown_vs">
-
+              <div className="text-[#a2aabc] text-lg mt-10">
+                  <div className="grid grid-cols-3 gap-5 text-sm mt-3 text-brown_vs">
                       <div className="flex flex-row mb-3">
                           <img
                               src={spring}
                               alt="Spring"
                               className="h-6 w-6 ml-3 mr-4 text-lightblue_vs"
                           />
-                          <code>Spring Boot / Spring</code>
+                          <code>Spring Boot/
+                              Spring</code>
                       </div>
                       <div className="flex flex-row mb-3">
                           <img
@@ -80,7 +79,8 @@ function Header() {
                               alt="Typescript Logo"
                               className="h-6 w-6 ml-3 mr-4 text-yellow_vs"
                           />
-                          <code>PostgreSQL</code>
+                          <code>Postgre Sql
+                          </code>
                       </div>
                       <div className="flex flex-row  mb-3">
                           <img
@@ -96,7 +96,8 @@ function Header() {
                               alt="NodeJS Logo"
                               className="h-6 w-6 ml-3 mr-4 text-yellow_vs"
                           />
-                          <code>Git/BitBucket</code>
+                          <code>Git/
+                              BitBucket</code>
                       </div>
 
 
@@ -138,7 +139,8 @@ function Header() {
                               alt="JSLogo"
                               className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
                           />
-                          <code>JavaScript/Ext </code>
+                          <code>JavaScript
+                              /Ext </code>
                       </div>
                       <div className="flex flex-row mb-3">
                           <img

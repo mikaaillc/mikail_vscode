@@ -102,7 +102,7 @@ const LeftBar = () => {
             <p> Main Avionic App </p>
           </div>
         </a>
-        <div className="absolute left-56 top-5">
+        <div className="object-fill ">
           <div className="flex px-6 space-x-7">
             <a href="https://github.com/mikaaillc">
               <img

@@ -29,7 +29,7 @@ const Resume = () => {
               Elektrik Elektronik Mühendisliği
             </code>
             <code className="text-xs text-brown_vs">
-              • 2017-2021
+              <br />• 2017-2021
             </code>
           </div>
         </div>

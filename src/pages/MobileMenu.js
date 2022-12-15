@@ -1,124 +1,190 @@
 import React, { useState } from "react";
-import {
-  MenuIcon,
-  XIcon,
-  CodeIcon,
-  ChevronDownIcon,
-  ChevronRightIcon,
-} from "@heroicons/react/solid";
-import { Disclosure, Transition } from "@headlessui/react";
+import { ChevronDownIcon, ChevronRightIcon } from "@heroicons/react/solid";
 
-const JSIcon = require("../assets/icons/JSIcon.png");
-const TSIcon = require("../assets/icons/TSIcon.png");
+const GitLogo = require("../assets/logos/GitLogo.png");
+const LinkedinLogo = require("../assets/logos/LinkedinLogo.png");
+const MediumLogo = require("../assets/logos/medium.png");
+const MailLogo = require("../assets/logos/MailLogo.png");
 
-const MobileMenu = () => {
-  const projects = [
-    {
-      name: "First Project",
-      href: "#",
-      icon: <img
-      src={JSIcon}
-      alt="JS Icon"
-      className="w-7 mr-1  ml-5 text-yellow_vs"
-    />,
-      current: true,
-    },
-    {
-      name: "Second Project",
-      href: "#",
-      icon:  <img
-      src={TSIcon}
-      alt="TS Icon"
-      className="w-7 mr-1  ml-5 text-yellow_vs"
-    />,
-      current: false,
-    },
-    {
-      name: "Third Project",
-      href: "#",
-      icon: <img
-      src={JSIcon}
-      alt="JS Icon"
-      className="w-7 mr-1  ml-5 text-yellow_vs"
-    />,
-      current: false,
-    },
-    {
-      name: "Fourth Project",
-      href: "#",
-      icon: <img
-      src={JSIcon}
-      alt="JS Icon"
-      className="w-7 mr-1  ml-5 text-yellow_vs"
-    />,
-      current: false,
-    },
-  ];
-  function classNames(...classes) {
-    return classes.filter(Boolean).join(" ");
-  }
+const JSIcon = require("../assets/icons/spring.png");
+const ReactIcon = require("../assets/logos/ReactLogo.png");
+const DjangoIcon = require("../assets/logos/django.png");
+const Python = require("../assets/logos/PythonLogo.png");
+
+const LeftBar = () => {
+  const [showWebList, SetShowWebList] = useState(true);
   const [showProjectsList, SetShowProjectsList] = useState(true);
 
+  const WebList = () => (
+      <div>
+        <a href="https://github.com/mikaaillc/surveyAppBackend">
+          <div className="ml-12 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] w-60">
+            <img
+                src={JSIcon}
+                alt={"js"}
+                className="w-6 mr-1  ml-5 text-yellow_vs"
+            />
+            <p>Survey App Backend</p>
+          </div>
+        </a>
+        <a href="https://github.com/mikaaillc/survey-react">
+          <div className="ml-12 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] w-60">
+            <img
+                src={ReactIcon}
+                alt={"react"}
+                className="w-6 mr-1  ml-5 text-yellow_vs"
+            />
+            <p>Survey App Frontend</p>
+          </div>
+        </a>
+        <a href="https://github.com/mikaaillc/shopOnline-">
+          <div className="ml-12 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] w-60">
+            <img
+                src={JSIcon}
+                alt={"js"}
+                className="w-6 mr-1  ml-5 text-yellow_vs"
+            />
+            <p>Shop Wepsite Backend</p>
+          </div>
+        </a>
+        <a href="https://github.com/mikaaillc/shop-online-react">
+          <div className="flex whitespace-nowrap items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] focus:bg-slate-300 ml-12 w-60">
+            <img
+                src={ReactIcon}
+                alt={"js"}
+                className="w-6 mr-1  ml-5 text-yellow_vs"
+            />
+            <p>Shop Wepsite Frontend</p>
+          </div>
+        </a>
+        <a href="https://github.com/mikaaillc/DjangoHeroku">
+          <div className="flex whitespace-nowrap items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] ml-12 w-60">
+            <img
+                src={DjangoIcon}
+                alt={"Django"}
+                className="w-6 mr-1  ml-5 text-yellow_vs"
+            />
+            <p>To-Do Heroku</p>
+          </div>
+        </a>
+        <a href="https://github.com/mikaaillc/booksApp">
+          <div className="flex whitespace-nowrap items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] ml-12 w-60">
+            <img
+                src={DjangoIcon}
+                alt={"Django"}
+                className="w-6 mr-1  ml-5 text-yellow_vs"
+            />
+            <p>Book App</p>
+          </div>
+        </a>
+      </div>
+  );
+
+  const Desktop = () => (
+      <div>
+        <a href="https://github.com/mikaaillc/PyqtChartsandPyqt5">
+          <div className="ml-12 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] w-60">
+            <img
+                src={Python}
+                alt={"python"}
+                className="w-6 mr-1  ml-5 text-yellow_vs"
+            />
+            <p>Python Charts</p>
+          </div>
+        </a>
+        <a href="https://github.com/mikaaillc/main_avionics">
+          <div className="ml-12 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] w-60">
+            <img
+                src={Python}
+                alt={"python"}
+                className="w-6 mr-1  ml-5 text-yellow_vs"
+            />
+            <p> Main Avionic App </p>
+          </div>
+        </a>
+        <div className="absolute left-56 top-5">
+          <div className="flex px-6 space-x-7">
+            <a href="https://github.com/mikaaillc">
+              <img
+                  src={GitLogo}
+                  alt="Git Logo"
+                  className="h-10 w-10 text-yellow_vs hover:cursor-pointer hover:h-12 hover:w-12"
+              />
+            </a>
+            <a href="https://medium.com/@mikail.celik">
+              <img
+                  src={MediumLogo}
+                  alt="Medium Logo"
+                  className="h-10 w-10 text-yellow_vs hover:cursor-pointer hover:h-12 hover:w-12"
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/mikailcelik/">
+              <img
+                  src={LinkedinLogo}
+                  alt="Linkedin Logo"
+                  className="h-10 w-10 text-yellow_vs hover:cursor-pointer hover:h-12 hover:w-12"
+              />
+            </a>
+            <a href="mailto::mikailclk23@gmail.com">
+              <img
+                  src={MailLogo}
+                  alt="Mail Logo"
+                  className="h-10 w-10 text-yellow_vs hover:cursor-pointer hover:h-12 hover:w-12"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+  );
+
   return (
-    <Disclosure>
-      {({ open }) => (
-        <>
-          <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-            {open ? (
-              <XIcon className="block w-16" aria-hidden="true" />
-            ) : (
-              <MenuIcon className="block w-16" aria-hidden="true" />
-            )}{" "}
-          </Disclosure.Button>
-          <Transition
-            enter="transition duration-100 ease-out"
-            enterFrom="transform scale-95 opacity-0"
-            enterTo="transform scale-100 opacity-100"
-            leave="transition duration-75 ease-out"
-            leaveFrom="transform scale-100 opacity-100"
-            leaveTo="transform scale-95 opacity-0"
+      <div className="text-[#a2aabc] text-lg mt-5 flex bg-[#262526] h-full">
+        <div>
+          <div
+              className="flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] font-bold w-72"
+              onClick={() => SetShowProjectsList(!showProjectsList)}
           >
-            <Disclosure.Panel className="">
-              <code className="px-2 pt-2 pb-3 space-y-1 text-white">
+            {showProjectsList ? (
+                <ChevronDownIcon className="w-7 mr-1" />
+            ) : (
+                <ChevronRightIcon className="w-7 mr-1" />
+            )}
+            <p>Projects</p>
+          </div>
+          {showProjectsList ? (
+              <>
                 <div
-                  className="mb-2 ml-4 font-bold flex text-xl"
-                  onClick={() => SetShowProjectsList(!showProjectsList)}
+                    className="flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] font-bold w-72"
+                    onClick={() => SetShowWebList(!showWebList)}
                 >
-                  {showProjectsList ? (
-                    <ChevronDownIcon className="w-7 mr-4" />
+                  {showWebList ? (
+                      <ChevronDownIcon className="w-7 mr-1  ml-5" />
                   ) : (
-                    <ChevronRightIcon className=" w-7 mr-4 " />
+                      <ChevronRightIcon className="w-7 mr-1  ml-5" />
                   )}
-                  Projects :
+
+                  <p>Web</p>
                 </div>
-                {showProjectsList
-                  ? projects.map((item) => (
-                      <Disclosure.Button
-                        key={item.name}
-                        as="a"
-                        href={item.href}
-                        className={classNames(
-                          item.current
-                            ? "bg-gray-900 text-white"
-                            : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                          "block px-3 py-2 rounded-md text-base font-medium"
-                        )}
-                        aria-current={item.current ? "page" : undefined}
-                      >
-                        <div className="flex ml-6">
-                          {item.icon}
-                          {item.name}
-                        </div>
-                      </Disclosure.Button>
-                    ))
-                  : null}
-              </code>
-            </Disclosure.Panel>
-          </Transition>
-        </>
-      )}
-    </Disclosure>
+                {showWebList ? <WebList /> : null}
+                <div
+                    className="flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] font-bold w-72"
+                    onClick={() => SetShowWebList(!showWebList)}
+                >
+                  {showWebList ? (
+                      <ChevronDownIcon className="w-7 mr-1  ml-5" />
+                  ) : (
+                      <ChevronRightIcon className="w-7 mr-1  ml-5" />
+                  )}
+
+                  <p>Desktop</p>
+                </div>
+
+                {showWebList ? <Desktop /> : null}
+              </>
+          ) : null}
+        </div>
+      </div>
   );
 };
 
-export default MobileMenu;
+export default LeftBar;

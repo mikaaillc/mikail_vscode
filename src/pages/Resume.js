@@ -147,7 +147,7 @@ const Resume = () => {
               <br />• TEKNOFEST TÜRKSAT 4. MODEL UYDU YARIŞMASI 2019 SAVUNMA TEKNOLOJİLERİ FOCOUNT TAKIMI: Python dilini kullanılarak telemetri verileri görselleştirme ve kaydetme görevi üzerinde çalışıldı.
               <br />• TEKNOFEST TÜRKSAT 5. MODEL UYDU YARIŞMASI 2020 SAVUNMA TEKNOLOJİLERİ FOCOUNT TAKIMI: Yer istasyonu arayüz yazılımı görevi Python dilinde PyQT5 kütüphanesi kullanılarak sağlandı.
               <br />• TEKNOFEST ROKETSAN ROKET YARIŞMASI 2020 SAVUNMA TEKNOLOJİLERİ FOCOUNT TAKIMI
-              <br />• TURKCELL SINIRSIZ YETENEK PROGRAMI 2021 (BORSACELL APP) Sınırsız yetenek programı kapsamında Turkcellde çalışan yetkili kişilerle belirli online eğitimler verildi. Takımlara mentör atandı ve bu kapsamda bir proje fikri bulunup sunumu yapıldı.
+              <br />• TURKCELL SINIRSIZ YETENEK PROGRAMI 2021 (BORSACELL APP) Sınırsız yetenek programı kapsamında Turkcell'de çalışan yetkili kişilerle belirli online eğitimler verildi. Takımlara mentör atandı ve bu kapsamda bir proje fikri bulunup sunumu yapıldı.
             </code>
           </div>
         </div>

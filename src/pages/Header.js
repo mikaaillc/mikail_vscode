@@ -68,7 +68,7 @@ function Header() {
                           <img
                               src={spring}
                               alt="Spring"
-                              className="h-6 w-6 ml-3 mr-4 text-lightblue_vs"
+                              className="h-6 w-6 ml-3 mr-2 text-lightblue_vs"
                           />
                           <code>Spring Boot/
                               Spring</code>
@@ -86,7 +86,7 @@ function Header() {
                           <img
                               src={Java}
                               alt="Tailwind Logo"
-                              className="h-6 w-6 ml-3 mr-4 text-yellow_vs"
+                              className="h-6 w-6 ml-3 mr-2 text-yellow_vs"
                           />
                           <code>Java</code>
                       </div>
@@ -94,7 +94,7 @@ function Header() {
                           <img
                               src={Git}
                               alt="NodeJS Logo"
-                              className="h-6 w-6 ml-3 mr-4 text-yellow_vs"
+                              className="h-6 w-6 ml-3 mr-2 text-yellow_vs"
                           />
                           <code>Git/
                               BitBucket</code>
@@ -113,7 +113,7 @@ function Header() {
                           <img
                               src={DjangoIcon}
                               alt="Python Logo"
-                              className="h-6 w-6 ml-3 mr-4 text-yellow_vs"
+                              className="h-6 w-6 ml-3 mr-2 text-yellow_vs"
                           />
                           <code>Django</code>
                       </div>
@@ -121,7 +121,7 @@ function Header() {
                           <img
                               src={Hibernate}
                               alt="Redux Logo"
-                              className="h-6 w-6 ml-3 mr-4 text-yellow_vs"
+                              className="h-6 w-6 ml-3 mr-1 text-yellow_vs"
                           />
                           <code>Hibernate</code>
                       </div>
@@ -137,7 +137,7 @@ function Header() {
                           <img
                               src={JSLogo}
                               alt="JSLogo"
-                              className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
+                              className="h-5 w-5 ml-3 mr-2 text-yellow_vs"
                           />
                           <code>JavaScript
                               /Ext </code>
@@ -146,7 +146,7 @@ function Header() {
                           <img
                               src={ReactLogo}
                               alt="React Logo"
-                              className="h-6 w-6 ml-3 mr-4 text-yellow_vs"
+                              className="h-6 w-6 ml-3 mr-2 text-yellow_vs"
                           />
                           <code>React</code>
                       </div>
@@ -162,7 +162,7 @@ function Header() {
                           <img
                               src={Intelij}
                               alt="Firebase Logo"
-                              className="h-6 w-6 ml-3 mr-4 text-yellow_vs"
+                              className="h-6 w-6 ml-3 mr-2 text-yellow_vs"
                           />
                           <code>Intelij IDEA</code>
                       </div>

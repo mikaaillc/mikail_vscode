@@ -17,11 +17,10 @@ const Resume = () => {
         </div>
       </div>
       <div className="text-[#a2aabc] text-lg mt-5">
-        <div className="flex flex-row">
+        <div className="flex flex-row pt-10 flex-wrap">
           <div className="w-1/4">
             <code className="text-yellow_vs">Education</code>
           </div>
-          <br />
           <div className="w-3/4">
             <code className="text-blue_vs">SAKARYA ÜNİVERSİTESİ - LİSANS</code>
             <br />

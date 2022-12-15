@@ -160,7 +160,7 @@ const Resume = () => {
               <br />• SAKARYA ÜNİVERSİTESİ 21GÜN 37 DERECE YÖNETİM BİLİŞİM SİSTEMLERİ TOPLULUĞU
               <br />• JAVA İLE PROGRAMLAMAYA GİRİŞ BTK AKADEMİ
               <br />• JAVA-REACT YAZILIM GELİŞTİRİCİ KAMPI
-              <br /> •PYTHON HACKERRANK
+              <br />• PYTHON HACKERRANK
               <br />• PYTHON AND TENSORFLOW VERİ BİLİMİ BTK AKADEMİ
               <br />• UDEMY UYGULAMA GELİŞTİREREK C# EĞİTİMİ
               <br />• VERSİYON KONTROLLERİ: GİT VE GİTHUB BTK AKADEMİ

@@ -68,7 +68,7 @@ function Header() {
                           <img
                               src={spring}
                               alt="Spring"
-                              className="h-6 w-6 ml-3 mr-2 text-lightblue_vs"
+                              className="h-6 w-6 ml-1 mr-2 text-lightblue_vs"
                           />
                           <code>Spring Boot/
                               Spring</code>
@@ -94,7 +94,7 @@ function Header() {
                           <img
                               src={Git}
                               alt="NodeJS Logo"
-                              className="h-6 w-6 ml-3 mr-2 text-yellow_vs"
+                              className="h-6 w-6 ml-1 mr-2 text-yellow_vs"
                           />
                           <code>Git/
                               BitBucket</code>
@@ -121,7 +121,7 @@ function Header() {
                           <img
                               src={Hibernate}
                               alt="Redux Logo"
-                              className="h-6 w-6 ml-3 mr-1 text-yellow_vs"
+                              className="h-6 w-6 ml-1 mr-1 text-yellow_vs"
                           />
                           <code>Hibernate</code>
                       </div>
@@ -146,7 +146,7 @@ function Header() {
                           <img
                               src={ReactLogo}
                               alt="React Logo"
-                              className="h-6 w-6 ml-3 mr-2 text-yellow_vs"
+                              className="h-6 w-6 ml-1 mr-2 text-yellow_vs"
                           />
                           <code>React</code>
                       </div>

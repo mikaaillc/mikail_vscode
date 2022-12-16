@@ -140,7 +140,7 @@ function Header() {
                               className="h-5 w-5 ml-3 mr-2 text-yellow_vs"
                           />
                           <code>JavaScript
-                              /Ext </code>
+                              /ExtJS </code>
                       </div>
                       <div className="flex flex-row mb-3">
                           <img
